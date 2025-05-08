@@ -1,0 +1,124 @@
+.auth-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    padding: 20px;
+}
+
+.auth-form {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 420px;
+    transition: all 0.3s ease;
+}
+
+.auth-form:hover {
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.auth-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #2d3748;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.input-group {
+    margin-bottom: 1.5rem;
+}
+
+.input-label {
+    display: block;
+    font-size: 0.9rem;
+    color: #4a5568;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.input-field {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    font-size: 1rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    background-color: #f8fafc;
+}
+
+.input-field:focus {
+    outline: none;
+    border-color: #4299e1;
+    box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.2);
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 0.9rem;
+    background-color: #4299e1;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 0.5rem;
+}
+
+.submit-btn:hover {
+    background-color: #3182ce;
+    transform: translateY(-2px);
+}
+
+.submit-btn:active {
+    transform: translateY(0);
+}
+
+.auth-footer {
+    text-align: center;
+    margin-top: 1.5rem;
+    font-size: 0.9rem;
+    color: #718096;
+}
+
+.auth-link {
+    color: #4299e1;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.auth-link:hover {
+    color: #3182ce;
+    text-decoration: underline;
+}
+
+.error-message {
+    color: #e53e3e;
+    font-size: 0.85rem;
+    margin-top: 0.25rem;
+    display: block;
+}
+
+.success-message {
+    color: #38a169;
+    font-size: 0.85rem;
+    margin-top: 0.25rem;
+    display: block;
+}
+
+@media (max-width: 480px) {
+    .auth-form {
+        padding: 1.5rem;
+    }
+
+    .auth-title {
+        font-size: 1.5rem;
+    }
+}
